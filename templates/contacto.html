@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+
+{% block contenido %}
+
+<br>
+
+<section id="section2">
+<div class="contenedor"></div><h3 class="especial">Informacion de contacto</h3></div><br> 
+<article id="a1">
+  <p>Siguenos en </p>
+  <ul class="social-icons">
+  <li><a href="https://www.facebook.com/search/top/?q=evacovarte" target="_blank"><img src="media/productos/Facebook_Logo.png" width="50" height="50"></a>
+
+  <li><a href="https://www.instagram.com/evacov_arte/" target="_blank"><img src="media/productos/logo_instagram.png" width="50" height="50"></a>
+  </ul>
+</article>
+
+<article id="a2">
+  <p>Mandanos un mensaje</p> <br>
+  <br><a  href="https://wa.me/584248163862" target="_blank"><img src="media/productos/logo_whatssap.png" width="50" height="50"></a>
+</article>
+
+<article id="a3">
+  <p>Visita nuestra tienda</p> <br>
+  <br><a  href="https://www.google.com/maps/place/Peaje+%22El+Pe%C3%B1%C3%B3n%22/@10.4449829,-64.0823536,15.92z/data=!4m6!3m5!1s0x8c326f1e3433539b:0x52ba713a833121dc!8m2!3d10.4459443!4d-64.0786573!16s%2Fg%2F11rshb2j_c?hl=es&entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="media/productos/logo_ubicacion.png" width="50" height="50"></a>
+</article>
+
+<article id="a4">
+  <p>Envianos un email </p> <br>
+  <br><a  href="mailto:Evacovarte@gmail.com" target="_blank"><img src="media/productos/logo_correo.png" width="50" height="50"></a>
+</article>
+
+</section><br>
+<br>
+<br>
+
+<form action="contacto" method="post">
+  <h4>Envianos un mensaje</h4><br>
+ 
+
+  {% csrf_token %}     <!--TOKEN DE SEGURIDAD---sin esto no se van  apoder ingresar los datos -->
+
+  {{form}}
+    
+    <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form><br>
+<br>
+
+{{mensaje}}
+
+{% endblock %}
+
+<!-- <h1>aqui ira el formulario</h1> -->
+

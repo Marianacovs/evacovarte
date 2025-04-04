@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+
+{% block contenido %}
+<br>
+
+<body>
+    
+  
+<section id="section1">
+    {% for elemento in articulos %} 
+        <article>
+            <div class="texto">
+                <h4>{{ elemento.nombre }}</h4>
+                <p>{{ elemento.contenido|safe }}
+            </div>
+    
+            {% if elemento.imagen %}
+                <img src="{{ elemento.imagen.url }}" alt="" class="imagen">
+            {% endif %}
+        </article>
+    {% endfor %}
+  </section>
+  <br>
+  <br>
+  <div class="imagenesF">
+  <img src="media/productos/fotoTaller.jpg"  width="350" height="350">
+  <img src="media/productos/fotoEva.jpg"  width="350" height="350">
+  <img src="media/productos/fotosNiños.jpg"  width="350" height="350">
+  </div>
+  <br>
+  <div class="imagenesF">
+  <img src="media/productos/salaComoda.jpg"  width="350" height="350">
+  <img src="media/productos/niñoycuadro.jpg"  width="350" height="350">
+  <img src="media/productos/niñasala.jpg"  width="350" height="350">
+  </div>
+  
+</body>
+
+<!-- aqui ira una breve descripcion de la empresa y contacto -->
+
+
+{% endblock %}

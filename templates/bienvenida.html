@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+{% block contenido %}
+
+
+<body>
+<h2 >¿Sabías que la práctica artística conlleva numerosos beneficios? Si es la primera vez que escuchas esto, en este artículo te lo revelaremos.</h2> <br><br>
+<h3> El arte desempeña un papel importante en el desarrollo integral de los niños y adultos, proporcionando una serie de beneficios significativos.</h3> <br><br>
+<section id="section1">
+  {% for elemento in articulos %} 
+      <article>
+          <div class="texto">
+              <h4>{{ elemento.nombre }}</h4>
+              <p>{{ elemento.contenido|safe }}</p>
+          </div>
+          {% if elemento.imagen %}
+              <img src="{{ elemento.imagen.url }}" alt="" class="imagen">
+          {% endif %}
+      </article>
+  {% endfor %}
+</section> 
+    
+        <!-- <img src="media/productos/Taller_de_Arte_para_Niños_-_0126.jpg" alt="" width="550">
+        <img src="media/productos/WhatsApp_Image_2024-07-13_at_14.14.13.jpeg" alt="" width="550">   -->
+         <!-- <img src="media/productos/Taller_de_Arte_para_Niños_-_0126.jpg" alt="" width="550">  -->
+    
+
+</body> 
+
+    
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+
+{% block contenido %}
+<br>
+
+<body>
+  
+<section id="section1">
+    {% for elemento in articulos %} 
+        <article>
+            <div class="texto">
+                <h4>{{ elemento.nombre }}</h4>
+                <p>{{ elemento.contenido|safe }}
+            </div>
+    
+            {% if elemento.imagen %}
+                <img src="{{ elemento.imagen.url }}" alt="" class="imagen">
+            {% endif %}
+        </article>
+    {% endfor %}
+  </section>
+  <br>
+  <br>
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="media/productos/WhatsApp_Image_2024-07-13_at_14.14.13_1.jpeg" class="img-normalizada" alt="descripcion de la imagen">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="media/productos/IMG-20230815-WA0024_1.jpg" alt="" class="img-normalizada">
+      </div>
+      <div class="carousel-item">
+        <img src="media/productos/WhatsApp_Image_2024-07-13_at_14.14.13_3.jpeg" class="img-normalizada" alt="...">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div> 
+  <br>
+  <br>
+  
+</body>
+
+<!-- aqui ira una breve descripcion de la empresa y contacto -->
+
+
+{% endblock %}

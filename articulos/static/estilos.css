@@ -1,0 +1,489 @@
+/* BAJAR MAS EL CONTENIDO DEL FOOTER Y COLOCAR ICONOS MAS LLAMATIVOS EN LA PAGINA BIENVENIDA 
+SUBIRRRR */
+
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+ /* esto es mi cabecera */
+header{
+    background: radial-gradient(circle,#075e46, #cab58e);
+    width:100% ;
+    height: 150px;
+    text-align: center;
+    position: fixed;        /* fijar*/
+    top:0;
+    left:0 ;
+    
+}
+ 
+h1{                         
+    color:white;
+    font-size: 5px;    /* no determinado.Es el nombre ,pero slo cambia el color*/
+    text-align: center;
+        
+}
+
+.separacion{
+    display: flex;
+    gap: 50px;  /* separacion entyre titulos*/
+    margin-left:300px; /* separacion margen izquierdo*/  
+    margin-right:100px; /* separacion margen derecha*/  
+}
+
+.separacion a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+div a:hover{
+    color: rgb(6, 6, 6); 
+    transition: 1s;
+}
+nav{
+    display: flex;                /*se mueve a la izquierda todo */
+    justify-content: center;
+    align-items: center;
+    height:100px;
+                  
+}
+
+
+.logo{
+    float: left; /* Esto alinea la imagen a la izquierda */
+    margin-left: 10px;
+    
+}
+
+.franja {
+   
+    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+    height: auto; 
+}
+
+
+
+/* body {
+    padding: 20px; Aumentar el espacio interno 
+    margin: 20px;   Aumentar el espacio externo 
+    font-size: 55px; Aumentar el tamaño de la fuente 
+} */
+
+
+body{
+
+    h2{
+        color: rgb(6, 6, 6);      /* esto es el titulo principal */
+        text-align: center;
+        background-color: white; 
+        font-size: 2.em;         
+     }
+
+   
+}
+
+
+body{
+    h3{
+        text-align: left;
+        padding-left: 60px;  /* mueve el texto a la derecha */
+        font-size: 1.8em; 
+        color: rgb(6, 6, 6);
+    }
+
+}
+
+article{
+    background-color: white;
+    width: 100%;               /*tamaño de la base del articulo*/
+    font-size: 20px; 
+    padding-left: 60px;  
+    padding-right: 6px;
+      
+}
+
+
+
+
+article footer{       /* tamaño de letras del footer */
+    font-size: 0.7rem;
+ }
+
+
+
+article {
+    display: flex;
+    align-items: center;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 50px;  /* ancho del texto  */
+    
+}
+
+.imagen {
+    max-width: 600px;
+    height: auto;     /* Mantiene la proporción */
+    width: 500px;  /* Ajusta el tamaño de la imagen */
+    margin-right: 65px; /* mueve a la izquiera  porque se da margen a la derecha */ 
+    margin-top:70px; /* margen superior */
+    /* float: right;
+    transform: translate(30px, 80px);  */
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+.texto h4 {
+    margin-bottom: 5px; /* Espaciado inferior del título con rescpecto al texto */
+    text-align: left;
+    font-size:2.0rem
+    
+    
+}
+
+.texto p {
+    margin-top:10px; /* margen superior */
+}
+
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;            /* Elimina el padding por defecto */
+    margin: 0;            /* Elimina el margin por defecto */
+}
+
+/* aqui mis cajas */
+
+#section2 {              /* asi se referencia una clase.Es la etiqueta section,pero con una clase llamada section2 */
+    background:white;
+    margin:55px;
+    padding: 5px;
+  
+    
+}
+ /*ojo para poder referenciar sin problemas se creo la clase especial dentro del contenedor*/ 
+ .especial {
+    color: rgb(6, 6, 6);
+    text-align: center;
+  
+}
+  
+#a1,#a2,#a3,#a4{              /* estas son las clases de mi etiqueta article */
+    background:white;
+    width:400px;
+    height:100px;
+    margin:10px;
+    padding-left: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 0.3em;
+    overflow: hidden; /* Asegura que las imágenes no se salgan de la caja */
+    position: relative; /* Para poder posicionar elementos internos */
+    
+}
+
+#a3{
+    a{color:  rgb(6, 6, 6);    /*especificidad */
+    
+    margin-left:66px; /* Espacio entre los iconos, ajustar como desees */
+     /* Espacio entre los iconos, ajustar como desees */
+        
+    
+    }
+}
+
+#a1,#a3 {
+    
+    float:right;
+    margin-right: 10%;
+    
+    
+}
+
+#a4 {
+   margin-top:3% ;
+
+    
+}
+
+#a3 {
+    margin-top:2.2%;
+}
+
+#a2,#a4 {  
+    margin-left: 10%;
+    
+   
+}
+
+
+.social-icons li {
+    display: inline;    /* Asegúrate de que los elementos de la lista estén en línea */
+    margin-left: 5px; /* Espacio entre los iconos, ajustar como desees */
+    
+  }
+
+
+#a1,#a2,#a3,#a4{
+    p{
+      color: rgb(6, 6, 6); ;
+      text-align: left;
+      font-size:1.5rem
+      
+    }
+}
+img{
+    margin-bottom: 5px;
+    margin-left: 60px;
+    display: flex;   
+    max-width: 100%; /* Para que la imagen no sobresalga del contenedor */
+    max-height: 100%; /* Ajustar la altura */
+    object-fit: cover; /* Para mantener la relación de aspecto y cubrir el área */
+    display: block; /* Para eliminar el espacio en la parte inferior */
+    
+}
+
+#a3 img{
+    margin-left: -10px; /* Ajusta el valor según sea necesario */
+}
+
+#a2 img {
+    margin-left: 15px; /* Ajusta este valor según lo que necesites */
+    
+}
+
+#a1 img {
+    float: left;
+    margin-left: 40px; 
+}
+  
+#a4 img {
+    float: right;
+    margin-right: -5px; /* Ajusta el valor según sea necesario */
+    
+}   
+  
+
+/* .social-icons img.fab {
+    background-color:rgb(181, 16, 16);   Especificidad.Mequeda solo el color por defecto
+    size: 55px;
+} */
+
+.social-icons  #a3{
+    color:white;
+}
+
+/* aqui mi formulario */
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+
+form{
+    h4{
+        color:black;
+        font-size: 2rem;
+    }
+}
+  
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+  }
+  
+input,
+textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 220px;      /* ancho de cada caja de campo */
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+}
+  
+input:focus,
+textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+}
+  
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 10px;                    /*  mejora visual mas separacion entre campos */
+    border: 1px solid #ccc;
+    border-radius: 3px;               /*  borde curvo de los campos */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido del formulario al centro */
+    
+}
+
+form{
+    gap: 30px;   /* Espacio entre los elementos del formulario */
+}
+
+  
+/* FOOTER */
+
+.footer {
+    background-color:#075e46;
+    color: white;
+    padding: 20px 0;   /*margen de arriba.No tocar*/ 
+    gap: 5px; /* Espaciado uniforme entre los elementos */
+
+    
+    
+}
+
+.contact span{     /* ojo al especificar se mueven mas los elementos,esto es clase contact ,etiqueta span */
+    display: flex;
+    margin-bottom:15px; /* Espacio entre los elementos */
+
+}
+
+.footer-principio{
+    margin-right: 60px; /* Espacio entre los elementos */
+    gap: 60px;
+    display: flex; /* Usamos flexbox,esto oredeno el contenido */
+    
+
+
+}
+.footer-container {
+    display: flex;
+    padding: 0 50px;    /*margen de arriba cero y el 50 es a lo lados.Este con noventa los medio mas al centro*/
+   
+    margin-right: 100px; /*logre juntar mas*/
+}
+
+.footer-container h1 {
+    margin-top: 0; /* Eliminar margen superior */
+    margin-bottom: 0; /* Puedes ajustar también el margen inferior si es necesario */
+  
+}
+
+.footer-container img {
+    margin-left: 10px; /* se mueve mi imgen a al izquierda o derecha evacovarte */
+    
+}
+
+.footer-section {
+    flex: 50;
+     /*margen de arriba cero ,se acerco mas al container*/
+    margin-top: -5px; /* sube*/
+    
+    
+    
+}
+
+/* .footer-section h1{
+    margin-right: 55px;
+    
+} */
+
+.footer-section p {
+   
+    text-align: justify
+}
+
+.footer-section a {
+    color:white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;   /*aparece un enlace al pasar el cursor y subrayado*/
+}
+
+.footer-redSocial{
+    
+    display: flex;
+    justify-content: center; /* Centrar los elementos dentro de la sección */
+    gap: 10px; /* Espacio uniforme entre los íconos de redes sociales */
+    margin-top: -25px;  /* sube*/
+}
+
+.social-icons{
+    margin-right: -30px; /* Mueve un poco más a la izquierda */
+}
+
+.bottom {
+    text-align: center;
+    padding: 10px 5;
+    background-color: #222;
+}
+
+
+
+/* aqui mi carrusel */
+
+.carousel {
+    position: relative;
+    max-width: 50%;        /* Ancho del carrusel */
+    height:auto;
+    overflow: hidden;  /* Oculta los elementos que se desbordan */
+    margin: auto;      /* Centra el carrusel */
+}
+
+.carousel__track {
+    display: flex;     /* Apila los elementos en fila */
+    transition: transform 0.5s ease; /* Transición suave al mover el carrusel */
+}
+
+.carousel__item {
+    min-width: 100%;   /* Cada elemento ocupa el 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+.img-normalizada{
+	width: 630px;
+	height: 630px;         /*imagenes mismo tamaño */
+	object-fit: cover;
+}
+
+/*colocar el icono de whatsaap al final margen derecho o un chatboot*/
+.imagenesF{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Se adapta a diferentes tamaños */
+    gap: 10px; /* Espacio entre imágenes */
+}

@@ -128,3 +128,6 @@ import os
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')   #ruta a la raiz del proyecto y se une con el directorio media.RUTA
 
+#subida de mi repositori railway
+ALLOWED_HOSTS=['https://web-production-5b5bb.up.railway.app','localhost']
+

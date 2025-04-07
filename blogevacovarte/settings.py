@@ -129,5 +129,5 @@ MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')   #ruta a la raiz del proyecto y se une con el directorio media.RUTA
 
 #subida de mi repositori railway
-ALLOWED_HOSTS=['localhost','https://web-production-17d9.up.railway.app']
-
+ALLOWED_HOSTS=['localhost','web-production-7402.up.railway.app']#localhost para que se pueda ver en desarrollo
+#ALLOWED_HOSTS=['*'] cualquiera podria ser el dominio de esta app

@@ -1,1 +1,1 @@
-web:gunicorn blogevacovarte.wsgi
+web: gunicorn blogevacovarte.wsgi

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b3%c=+*=vsrl%1db__z(&@@u#_xq8fd!l52f4i56zpvumlhthn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['web-production-7402.up.railway.app']
 
@@ -133,4 +133,4 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')   #ruta a la raiz del proyecto y se un
 
 #subida de mi repositori railway
 # ALLOWED_HOSTS=['localhost','web-production-7402.up.railway.app']#localhost para que se pueda ver en desarrollo
-ALLOWED_HOSTS=['*'] 
+# ALLOWED_HOSTS=['*'] 

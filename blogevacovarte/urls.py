@@ -31,7 +31,7 @@ urlpatterns = [
     path('servicios',views.servicios,name='servicios'),
     path('base',views.base),
     path('tinymce/',include('tinymce.urls')),
-    path('',include('articulos.urls')),
+    # path('',include('articulos.urls')),
     
 
 ]

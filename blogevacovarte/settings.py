@@ -132,5 +132,5 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')   #ruta a la raiz del proyecto y se un
 
 
 #subida de mi repositori railway
-# ALLOWED_HOSTS=['localhost','web-production-7402.up.railway.app']#localhost para que se pueda ver en desarrollo
+ALLOWED_HOSTS=['localhost','web-production-9e09.up.railway.app']#localhost para que se pueda ver en desarrollo
 # ALLOWED_HOSTS=['*'] 

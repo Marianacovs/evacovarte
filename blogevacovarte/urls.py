@@ -25,13 +25,13 @@ from django.conf.urls.static import static      #importa una funcion lalamada st
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home',views.home,name='home'),    #cuando el usuario este en home se mostrata lo definido en la funcion home que se encuentra en vista
+    path('home',views.home,name='home'),       #cuando el usuario este en home se mostrata lo definido en la funcion home que se encuentra en vista
     path('contacto',views.contacto,name='contacto'),   #se pudo asi
     path('nosotros',views.nosotros,name='nosotros'),
     path('servicios',views.servicios,name='servicios'),
     path('base',views.base),
     path('tinymce/',include('tinymce.urls')),
-    # path('',include('articulos.urls')),
+  
     
 
 ]

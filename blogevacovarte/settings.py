@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-b3%c=+*=vsrl%1db__z(&@@u#_xq8fd!l52f4i56zpvumlhthn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['codigorosa.pythonanywhere.com']
+ALLOWED_HOSTS = ['codigorosa.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -120,7 +120,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -130,6 +133,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')   #ruta a la raiz del proyecto y se une con el directorio media.RUTA
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 
 
 

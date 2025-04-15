@@ -3,6 +3,10 @@ from articulos.models import Entradas  #mandando diccionarios.de la app articulo
 from.forms import ContactoForm
 from articulos.models import EntradaDos,Servicios
 
+
+def home(request):
+    return render(request, 'home.html')  # Asegúrate de que la plantilla existe.MIRAR PORQ ESTA DOBLE
+
 #si acceden a home trae al archivo html
 def home(request):
     articulos=Entradas.objects.all()   #del modelo de entrada se guarda en articulos y se envian a traves de diccionarios
